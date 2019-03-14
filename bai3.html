@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập luyện tập và sử dụng hàm</title>
+</head>
+<body>
+    <input type="text" id="so1">
+    <br/>
+    <input type="text" id="so2">
+    <button onclick="check(parseInt(document.getElementById('so1').value),parseInt(document.getElementById('so2').value))">Check so</button>
+    <script>
+        function check(a,b) {
+            let tong = a + b;
+            if (a > b){
+                alert( a + "lớn hơn" + b);
+            }
+            else {
+                alert("Tổng hai số là :" + tong);
+            }
+        }
+    </script>
+</body>
+</html>

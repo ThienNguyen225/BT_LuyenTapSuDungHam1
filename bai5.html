@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập luyện tập và sử dụng hàm</title>
+</head>
+<body>
+    <button onclick="checkStar(prompt('nhap ten ngoi sao: '))">Check Star</button>
+    <script>
+        let mang1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe",  "Regulus"];
+        let mang2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major",  "Leo"];
+        function checkStar(star) {
+            let flag = false;
+            for (let i = 0; i < mang1.length; i++){
+                if (mang1[i] == star){
+                    flag = true;
+                    alert(" Sao " + star + " nằm trong chòm sao : " + mang2[i]);
+                    break;
+                }
+            }
+            if (!flag){
+                alert( star + " Không phải là tên ngôi sao !");
+            }
+        }
+    </script>
+</body>
+</html>
